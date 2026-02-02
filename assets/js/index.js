@@ -6,5 +6,12 @@
         });
     });
 
+    $(function () {
+        const yearContainer = $(".l-footer__details__col1__area__year");
+        var now = new Date();
+        var year = now.getFullYear();
+        yearContainer.text(year);
+    })
+
 
 })(jQuery.noConflict());

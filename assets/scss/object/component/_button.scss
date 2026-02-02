@@ -1,19 +1,37 @@
+@use "../../foundation/value";
+@use "../../foundation/media_query";
+
 .c-button {
-    color: #fff;
-    font-size: 1.4rem;
+    color: value.$color-4;
+    font-size: 14px;
     text-decoration: none;
-    border-radius: 5px;
-    padding: 0.5rem 1.5rem;
+    border-radius: 100px;
+    padding: 15px 30px;
+    font-weight: 500;
+    background: value.$color-7;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: opacity 0.3s;
 
-    &.btn-primary {
-        background: $primary-btn;
-    }
-
-    &.btn-secondary {
-        background: $secondary-btn;
+    &::after {
+        content: "";
+        background: url("/assets/img/component/btn-icon.svg") no-repeat center center / contain;
+        width: 8px;
+        height: 8px;
+        right: 20px;
+        display: inline-block;
+        transition: transform 0.3s;
     }
 
     &:hover {
-        opacity: 0.8;
+        @include media_query.mq_pc {
+            opacity: 0.8;
+
+            &::after {
+                transform: translateY(-10px);
+            }
+        }
     }
 }

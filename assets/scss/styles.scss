@@ -13,7 +13,9 @@
 @use 'layout/footer';
 
 // Object
+
 // - Component
+@use 'object/component/button';
 @use 'object/component/post-category';
 @use 'object/component/post-list';
 @use 'object/component/recent-post';

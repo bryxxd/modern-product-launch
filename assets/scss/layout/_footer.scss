@@ -1,18 +1,68 @@
 @use "../foundation/media_query";
+@use "../foundation/value";
 
 .l-footer {
-    background: #000;
+    padding-bottom: 40px;
 
-    &__copyright {
-        &__p {
-            font-size: 16px;
-            text-align: center;
-            color: #fff;
-            padding: 2rem 0;
+    &__inner {
+        border-top: 1px solid value.$color-3;
+        padding-top: 50px;
 
-            @include media_query.mq_sp {
-                font-size: 1rem;
+        @include media_query.mq_sp {
+            padding: 40px 16px 0;
+        }
+    }
+
+    &__sitemap {
+        display: inline-flex;
+        gap: 27px;
+
+        @include media_query.mq_sp {
+            flex-direction: column;
+        }
+
+        &__a {
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            color: value.$color-1;
+            transition: opacity 0.3s;
+
+            @include media_query.mq_pc {
+                &:hover {
+                    opacity: 0.7;
+                }
             }
+        }
+    }
+
+    &__details {
+        margin-top: 50px;
+        font-family: value.$font-roboto;
+        color: value.$color-7;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        letter-spacing: 0.1em;
+
+        @include media_query.mq_sp {
+           margin-top: 80px;
+           flex-wrap: wrap;
+           row-gap: 30px;
+        }
+
+        &__col1 {
+            display: flex;
+            align-items: flex-end;
+            gap: 40px;
+
+            &__area {
+                font-size: 11px;
+            }
+        }
+
+        &__allrights {
+            font-size: 12px;
         }
     }
 }

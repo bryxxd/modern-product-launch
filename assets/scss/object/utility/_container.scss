@@ -3,12 +3,22 @@
 
 .u-container {
     margin: 0 auto;
-    max-width: calc(#{value.$pc-width}px + #{value.$pc-gap * 2});
+    max-width: value.$pc-width + px;
     padding: 0 value.$pc-gap;
 
     @include media_query.mq_sp {
+        margin: 0 value.$sp-gap;
+        padding: 0;
+    }
+
+    &-pc-only {
         margin: 0 auto;
-        max-width: auto;
-        padding: 0 value.$sp-gap;
+        max-width: value.$pc-width + px;
+        padding: 0 value.$pc-gap;
+
+        @include media_query.mq_sp {
+            margin: 0;
+            padding: 0;
+        }
     }
 }
