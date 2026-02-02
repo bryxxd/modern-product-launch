@@ -1,0 +1,15 @@
+{
+  "name": "landing-page-template",
+  "version": "1.0.0",
+  "description": "landing-page-template",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch ./assets/scss:./assets/css --style compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}

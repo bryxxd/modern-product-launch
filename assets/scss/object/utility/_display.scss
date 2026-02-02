@@ -1,0 +1,15 @@
+@use "../../foundation/media_query";
+
+.u-display {
+    &-pc-only {
+        @include media_query.mq_sp {
+            display: none !important;
+        }
+    }
+
+    &-sp-only {
+        @include media_query.mq_pc {
+            display: none !important;
+        }
+    }
+}

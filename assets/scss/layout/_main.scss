@@ -1,0 +1,7 @@
+@use "../foundation/media_query";
+
+.l-main {
+    @include media_query.mq_sp {
+        padding-top: 4.8rem;
+    }
+}

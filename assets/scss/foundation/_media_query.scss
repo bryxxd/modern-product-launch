@@ -1,0 +1,13 @@
+@use "value";
+
+@mixin mq_pc {
+    @media screen and (min-width: (value.$sp-width + 1) + px) {
+        @content;
+    }
+}
+
+@mixin mq_sp {
+    @media screen and (max-width: value.$sp-width + px) {
+        @content
+     }
+}

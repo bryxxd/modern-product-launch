@@ -1,0 +1,14 @@
+@use "../../foundation/media_query";
+@use "../../foundation/value";
+
+.u-container {
+    margin: 0 auto;
+    max-width: calc(#{value.$pc-width}px + #{value.$pc-gap * 2});
+    padding: 0 value.$pc-gap;
+
+    @include media_query.mq_sp {
+        margin: 0 auto;
+        max-width: auto;
+        padding: 0 value.$sp-gap;
+    }
+}
