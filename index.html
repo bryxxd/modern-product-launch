@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -48,21 +50,74 @@
 
     <main class="l-main">
         <div class="p-index">
-            <div class="p-index__hero">
-                <picture>
-                    <source media="(max-width:750px)" srcset="https://dummyimage.com/375x500/000/fff">
-                    <img class="p-index__hero__img" src="https://dummyimage.com/1200x600/000/fff" alt>
-                </picture>
-            </div>
-            <section class="p-index__section">
+            <section class="p-index__mv">
                 <div class="u-container">
-                    <h2 class="p-index__section__title">Section Title</h2>
-                    <p class="p-index__section__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Sed do
-                        eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua.
-                    </p>
+                    <h1 class="p-index__mv__h1">Browse everything.</h1>
+                    <div class="p-index__mv__visual">
+                        <picture>
+                            <source media="(max-width:800px)" srcset="./assets/img/sp/mv-img.png">
+                            <img class="p-index__mv__visual__img" src="./assets/img/pc/mv-img.png" alt="Visual chart illustrating a 78% increase in efficiency across 33 regions between 2021 and 2024, with clear upward trends year over year">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <section class="p-index__logo">
+                <div class="u-container">
+                    <p class="p-index__logo__txt">Trusted by:</p>
+                    <ul class="p-index__logo__list">
+                        <li class="p-index__logo__list__item">
+                            <img src="./assets/img/logo-1.svg" alt="Logo 1">
+                        </li>
+                        <li class="p-index__logo__list__item">
+                            <img src="./assets/img/logo-2.svg" alt="Logo 2">
+                        </li>
+                        <li class="p-index__logo__list__item">
+                            <img src="./assets/img/logo-3.svg" alt="Logo 3">
+                        </li>
+                        <li class="p-index__logo__list__item">
+                            <img src="./assets/img/logo-4.svg" alt="Logo 4">
+                        </li>
+                        <li class="p-index__logo__list__item">
+                            <img src="./assets/img/logo-5.svg" alt="Logo 5">
+                        </li>
+                        <li class="p-index__logo__list__item">
+                            <img src="./assets/img/logo-6.svg" alt="Logo 6">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="p-index__benefits">
+                <div class="u-container">
+                    <h2 class="c-heading">Benefits</h2>
+                    <p class="p-index__benefits__txt2">We’ve cracked the code.</p>
+                    <p class="p-index__benefits__txt3">Area provides real insights, without the data overload.</p>
+                    <div class="p-index__benefits__list">
+                        <div class="p-index__benefits__list__item">
+                            <img src="./assets/img/benefits-icon-1.svg" alt="">
+                            <p class="p-index__benefits__list__item__name">Amplify Insights</p>
+                            <p class="p-index__benefits__list__item__description">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth.</p>
+                        </div>
+                        <div class="p-index__benefits__list__item">
+                            <img src="./assets/img/benefits-icon-2.svg" alt="">
+                            <p class="p-index__benefits__list__item__name">Control Your Global Presence</p>
+                            <p class="p-index__benefits__list__item__description">Manage and track satellite offices, ensuring consistent performance and streamlined operations everywhere.</p>
+                        </div>
+                         <div class="p-index__benefits__list__item">
+                            <img src="./assets/img/benefits-icon-3.svg" alt="">
+                            <p class="p-index__benefits__list__item__name">Remove Language Barriers</p>
+                            <p class="p-index__benefits__list__item__description">Adapt to diverse markets with built-in localization for clear communication and enhanced user experience.</p>
+                        </div>
+                         <div class="p-index__benefits__list__item">
+                            <img src="./assets/img/benefits-icon-4.svg" alt="">
+                            <p class="p-index__benefits__list__item__name">Visualize Growth</p>
+                            <p class="p-index__benefits__list__item__description">Generate precise, visually compelling reports that illustrate your growth trajectories across all regions.</p>
+                        </div>
+                    </div>
+                    <picture class="p-index__benefits__visual">
+                        <source media="(max-width:800px)" srcset="./assets/img/sp/benefits-big-img.jpg">
+                        <source media="(max-width:1024px)" srcset="./assets/img/tablet/benefits-big-img.jpg">
+                        <img class="p-index__benefits__visual__img" src="./assets/img/pc/benefits-big-img.jpg" alt="A image that shows a mountain range ">
+                    </picture>
                 </div>
             </section>
         </div>
@@ -99,4 +154,5 @@
     <script src="./assets/vendor/jquery-4.0.0.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,10 @@
+@use "../../foundation/value";
+
+.c-heading {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: value.$font-roboto;
+    color: value.$color-7;
+    line-height: 140%;
+    letter-spacing: 1px
+}

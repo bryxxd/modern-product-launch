@@ -11,3 +11,9 @@
         @content
      }
 }
+
+@mixin mq_tablet {
+    @media screen and (min-width: (value.$sp-width + 1) + px) and (max-width: value.$tablet-width + px) {
+        @content
+    }
+}

@@ -32,7 +32,7 @@ a {
     }
 }
 
-// Paragraph 
+// Paragraph
 p {
     margin: 0;
 }
@@ -56,9 +56,5 @@ ul {
 }
 
 img {
-    vertical-align: top;
-
-    @include media_query.mq_sp {
-        max-width: 100%;
-    }
+    max-width: 100%;
 }

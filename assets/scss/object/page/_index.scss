@@ -1,29 +1,140 @@
 @use "../../foundation/media_query";
+@use "../../foundation/value";
 
 .p-index {
-    &__hero {
-        &__img {
-            width: 100%;
+    &__mv {
+        &__h1 {
+            font-size: 160px;
+            font-family: value.$font-crimson-text;
+            font-weight: 400;
+            letter-spacing: -5px;
+            text-align: center;
+            line-height: 85%;
+
+            @include media_query.mq_sp {
+                word-break: break-all;
+            }
+        }
+
+        &__visual {
+            position: relative;
+            margin-top: 50px;
+
+            &__img {
+                width: 100%;
+                display: block;
+                max-width: 907px;
+                margin: auto;
+                position: relative;
+                z-index: 1;
+
+                @include media_query.mq_sp {
+                    max-width: calc(100% - 76px);
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: value.$color-6;
+                width: 100%;
+                height: 362px;
+                border-radius: 30px;
+
+                @include media_query.mq_sp {
+                    bottom: unset;
+                    top: 40px;
+                }
+            }
         }
     }
 
-    &__section {
-        padding: 100px 0;
+    &__logo {
+        padding-top: 50px;
 
-        &__title {
-            font-size: 32px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 60px;
+        &__txt {
+            font-size: 15px;
+            color: #6f6f6f;
+            padding-bottom: 30px;
         }
 
-        &__text {
-            font-size: 16px;
-            line-height: 1.8;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 40px auto;
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid value.$color-3;
+
+            @include media_query.mq_sp {
+                gap: 20px 40px;
+            }
         }
     }
 
+    &__benefits {
+        padding-top: 80px;
+
+        &__txt2 {
+            padding: 50px 0;
+            font-size: 60px;
+            line-height: 90%;
+            letter-spacing: 0.01em;
+            font-weight: 400;
+            font-family: value.$font-crimson-text;
+
+            @include media_query.mq_sp {
+                padding-bottom: 30px;
+            }
+        }
+
+        &__txt3 {
+            font-size: 15px;
+            color: #6f6f6f;
+            letter-spacing: 0.01em;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 80px 0 100px;
+
+            @include media_query.mq_tablet {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include media_query.mq_sp {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            &__item {
+                padding-top: 40px;
+                border-top: 1px solid value.$color-3;
+                flex: 1;
+
+                &__name {
+                    font-size: 18px;
+                    line-height: 100%;
+                    margin: 20px 0;
+                }
+
+                &__description {
+                    font-size: 15px;
+                    line-height: 140%;
+                    color: #6f6f6f;
+                    letter-spacing: 0.01em;
+                }
+            }
+        }
+
+        &__visual {
+            &__img {
+                border-radius: 30px;
+            }
+        }
+    }
 }

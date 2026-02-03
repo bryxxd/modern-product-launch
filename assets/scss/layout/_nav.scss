@@ -17,8 +17,23 @@
     &__ul {
         display: inline-flex;
         gap: 30px;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 100px;
+        padding: 20px 24px;
+        top: 13px;
 
         @include media_query.mq_sp {
+            position: static;
+            transform: unset;
+            padding: 0;
+            background: none;
+            backdrop-filter: none;
             display: flex;
             gap: 0;
             height: 100%;
