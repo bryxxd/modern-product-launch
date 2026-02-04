@@ -12,6 +12,7 @@ $color-4 : #FFFFFF;
 $color-5 : #DFECC6;
 $color-6 : #8E9C78;
 $color-7 : #485C11;
+$color-paragraph : #6f6f6f;
 
 // For pc
 $pc-width : 1200;
@@ -20,5 +21,6 @@ $pc-gap : 40px;
 $tablet-width: 1024;
 
 //For sp
-$sp-width: 800;
+$sp-width: 400;
+$sp-width-breakpoint : $sp-width * 2;
 $sp-gap : 15px;

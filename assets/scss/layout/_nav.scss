@@ -16,7 +16,7 @@
 
     &__ul {
         display: inline-flex;
-        gap: 30px;
+        gap: 27px;
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
@@ -56,6 +56,7 @@
                 font-weight: bold;
                 color: value.$color-1;
                 transition: opacity 0.3s;
+                letter-spacing: -0.025em;
 
                 @include media_query.mq_pc {
                     &:hover {

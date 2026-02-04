@@ -6,5 +6,9 @@
     font-family: value.$font-roboto;
     color: value.$color-7;
     line-height: 140%;
-    letter-spacing: 1px
+    letter-spacing: 0.1em;
+
+    &.is-center {
+        text-align: center;
+    }
 }
