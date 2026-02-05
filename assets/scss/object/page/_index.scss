@@ -10,16 +10,27 @@
             letter-spacing: -0.05em;
             text-align: center;
             line-height: 85%;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1320ms 120ms ease forwards;
 
             @include media_query.mq_sp {
                 word-break: break-all;
                 font-size: 76px;
+            }
+
+            @keyframes fadeInUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
         }
 
         &__visual {
             position: relative;
             margin-top: 100px;
+            overflow: hidden;
 
             @include media_query.mq_sp {
                 margin-top: 70px;
@@ -32,9 +43,20 @@
                 margin: auto;
                 position: relative;
                 z-index: 1;
+                animation: toUp 1328ms 150ms ease forwards;
 
                 @include media_query.mq_sp {
                     max-width: calc(100% - 76px);
+                }
+
+                @keyframes toUp {
+                    from {
+                        transform: translateY(80px);
+                    }
+
+                    to {
+                        transform: translateY(0);
+                    }
                 }
             }
 
@@ -197,7 +219,7 @@
     }
 
     &__specs {
-        margin-top: 80px;
+        padding-top: 80px;
 
         &__intro {
             text-align: center;

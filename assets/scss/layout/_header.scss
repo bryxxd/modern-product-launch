@@ -6,6 +6,8 @@
     align-items: center;
     padding: 20px 40px;
     background: #fff;
+    max-width: 1200px;
+    margin: auto;
 
     @include media_query.mq_sp {
         display: block;

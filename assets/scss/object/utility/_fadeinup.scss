@@ -1,0 +1,15 @@
+.u-fadeinup {
+    opacity: 0;
+    transform: translateY(20px);
+    
+    &.is-animated {
+        animation: fadeInUp 1320ms ease forwards;
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
