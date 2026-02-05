@@ -4,16 +4,37 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page Template</title>
+    <title>Modern Product Launch - Showcase Your Product with a Sleek Landing Page</title>
+    <meta name="description" content="" />
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/x-icon" href="./assets/meta/favicon.ico" />
+
+    <!-- OGP -->
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
+
 </head>
 
 <body>
     <header class="l-header">
         <div class="l-header__info">
-            <h1 class="l-header__info__title">Logo</h1>
+            <h1 class="l-header__info__title"><a href="#">Area</a></h1>
         </div>
         <nav class="l-nav">
             <p class="l-nav__menu u-display-sp-only">
@@ -23,51 +44,411 @@
                     <span class="l-nav__menu__button__line"></span>
                 </button>
             </p>
-            <ul class="l-nav__ul">
-                <li class="l-nav__ul__li">
-                    <a href="#" class="l-nav__ul__li__a">Home</a>
-                </li>
-                <li class="l-nav__ul__li">
-                    <a href="#" class="l-nav__ul__li__a">Section</a>
-                </li>
-                <li class="l-nav__ul__li">
-                    <a href="#" class="l-nav__ul__li__a">Section</a>
-                </li>
-            </ul>
+            <div class="l-nav__menu-sp">
+                <ul class="l-nav__ul">
+                    <li class="l-nav__ul__li">
+                        <a href="#benefits" class="l-nav__ul__li__a">Benefits</a>
+                    </li>
+                    <li class="l-nav__ul__li">
+                        <a href="#specs" class="l-nav__ul__li__a">Specifications</a>
+                    </li>
+                    <li class="l-nav__ul__li">
+                        <a href="#hiws" class="l-nav__ul__li__a">How-to</a>
+                    </li>
+                    <li class="l-nav__ul__li">
+                        <a href="#cta" class="l-nav__ul__li__a">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <div class="l-header__learn-more">
+            <a class="l-header__learn-more__btn c-button" href="https://www.figma.com/sites/" target="_blank">Learn
+                More</a>
+        </div>
     </header>
 
     <main class="l-main">
         <div class="p-index">
-            <div class="p-index__hero">
-                <picture>
-                    <source media="(max-width:750px)" srcset="https://dummyimage.com/375x500/000/fff">
-                    <img class="p-index__hero__img" src="https://dummyimage.com/1200x600/000/fff" alt="">
-                </picture>
-            </div>
-            <section class="p-index__section">
+            <section class="p-index__mv">
                 <div class="u-container">
-                    <h2 class="p-index__section__title">Section Title</h2>
-                    <p class="p-index__section__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <h1 class="p-index__mv__h1">
+                        Browse<br class="u-display-below-pc-only" />
+                        everything.
+                    </h1>
+                    <div class="p-index__mv__visual">
+                        <picture>
+                            <source media="(max-width:800px)" srcset="./assets/img/sp/mv-img.jpg" />
+                            <img class="p-index__mv__visual__img" src="./assets/img/pc/mv-img.png"
+                                alt="Visual chart illustrating a 78% increase in efficiency across 33 regions between 2021 and 2024, with clear upward trends year over year" />
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <section class="p-index__logo u-fadeinup">
+                <div class="u-container">
+                    <p class="p-index__logo__txt">Trusted by:</p>
+                    <ul class="p-index__logo__list">
+                        <li class="p-index__logo__list__item">
+                            <img class="p-index__logo__list__item__img" src="./assets/img/logo-1.svg" alt="Logo 1" />
+                        </li>
+                        <li class="p-index__logo__list__item">
+                            <img class="p-index__logo__list__item__img" src="./assets/img/logo-2.svg" alt="Logo 2" />
+                        </li>
+                        <li class="p-index__logo__list__item">
+                            <img class="p-index__logo__list__item__img" src="./assets/img/logo-3.svg" alt="Logo 3" />
+                        </li>
+                        <li class="p-index__logo__list__item">
+                            <img class="p-index__logo__list__item__img" src="./assets/img/logo-4.svg" alt="Logo 4" />
+                        </li>
+                        <li class="p-index__logo__list__item">
+                            <img class="p-index__logo__list__item__img" src="./assets/img/logo-5.svg" alt="Logo 5" />
+                        </li>
+                        <li class="p-index__logo__list__item">
+                            <img class="p-index__logo__list__item__img" src="./assets/img/logo-6.svg" alt="Logo 6" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="p-index__benefits u-fadeinup" id="benefits">
+                <div class="u-container">
+                    <h2 class="c-heading">Benefits</h2>
+                    <p class="c-headline">
+                        We’ve cracked<br class="u-display-sp-only" />
+                        the code.
                     </p>
+                    <p class="p-index__benefits__txt3">
+                        Area provides real insights, without the data overload.
+                    </p>
+                    <div class="p-index__benefits__list">
+                        <div class="p-index__benefits__list__item">
+                            <img src="./assets/img/benefits-icon-1.svg" alt="" />
+                            <p class="p-index__benefits__list__item__name">
+                                Amplify Insights
+                            </p>
+                            <p class="p-index__benefits__list__item__description">
+                                Unlock data-driven decisions with comprehensive analytics,
+                                revealing<br class="u-display-pc-only" />
+                                key opportunities for strategic regional growth.
+                            </p>
+                        </div>
+                        <div class="p-index__benefits__list__item">
+                            <img src="./assets/img/benefits-icon-2.svg" alt="" />
+                            <p class="p-index__benefits__list__item__name">
+                                Control Your Global Presence
+                            </p>
+                            <p class="p-index__benefits__list__item__description">
+                                Manage and track satellite offices, ensuring consistent
+                                performance and streamlined operations everywhere.
+                            </p>
+                        </div>
+                        <div class="p-index__benefits__list__item">
+                            <img src="./assets/img/benefits-icon-3.svg" alt="" />
+                            <p class="p-index__benefits__list__item__name">
+                                Remove Language Barriers
+                            </p>
+                            <p class="p-index__benefits__list__item__description">
+                                Adapt to diverse markets with<br class="u-display-pc-only" />
+                                built-in localization for clear communication and enhanced
+                                user experience.
+                            </p>
+                        </div>
+                        <div class="p-index__benefits__list__item">
+                            <img src="./assets/img/benefits-icon-4.svg" alt="" />
+                            <p class="p-index__benefits__list__item__name">
+                                Visualize Growth
+                            </p>
+                            <p class="p-index__benefits__list__item__description">
+                                Generate precise, visually<br class="u-display-pc-only" />
+                                compelling<br class="u-display-sp-only" />
+                                reports that illustrate<br class="u-display-pc-only" />
+                                your growth<br class="u-display-sp-only" />
+                                trajectories across all regions.
+                            </p>
+                        </div>
+                    </div>
+                    <picture class="p-index__benefits__visual">
+                        <source media="(max-width:800px)" srcset="./assets/img/sp/benefits-big-img.jpg" />
+                        <source media="(max-width:1024px)" srcset="./assets/img/tablet/benefits-big-img.jpg" />
+                        <img class="p-index__benefits__visual__img" src="./assets/img/pc/benefits-big-img.jpg"
+                            alt="A image that shows a mountain range " />
+                    </picture>
+                </div>
+            </section>
+            <section class="p-index__features u-fadeinup">
+                <div class="u-container">
+                    <div class="p-index__features__inner">
+                        <div class="p-index__features__detail">
+                            <p class="p-index__features__detail__head c-headline">
+                                See the Big<br class="u-display-sp-only" />
+                                Picture
+                            </p>
+                            <p class="p-index__features__detail__description">
+                                Area turns your data into clear, vibrant visuals that show you
+                                exactly<br class="u-display-pc-only" />
+                                what's happening in each region.
+                            </p>
+                            <ul class="p-index__features__detail__list">
+                                <li class="p-index__features__detail__list__item">
+                                    <span class="p-index__features__detail__list__item__number">01</span>
+                                    <span class="p-index__features__detail__list__item__description">Spot Trends in
+                                        Seconds: No more digging through numbers.
+                                    </span>
+                                </li>
+                                <li class="p-index__features__detail__list__item">
+                                    <span class="p-index__features__detail__list__item__number">02</span>
+                                    <span class="p-index__features__detail__list__item__description">Get Everyone on the
+                                        Same Page: Share
+                                        easy-to-understand<br class="u-display-pc-only" />
+                                        reports with your team.
+                                    </span>
+                                </li>
+                                <li class="p-index__features__detail__list__item">
+                                    <span class="p-index__features__detail__list__item__number">03</span>
+                                    <span class="p-index__features__detail__list__item__description">Make Presentations
+                                        Pop: Interactive maps and dashboards
+                                        keep<br class="u-display-pc-only" />
+                                        your audience engaged.</span>
+                                </li>
+                                <li class="p-index__features__detail__list__item">
+                                    <span class="p-index__features__detail__list__item__number">04</span>
+                                    <span class="p-index__features__detail__list__item__description">Your Global
+                                        Snapshot: Get a quick, clear overview of your
+                                        entire<br class="u-display-pc-only" />
+                                        operation.</span>
+                                </li>
+                            </ul>
+                            <a class="c-button is-secondary" href="#">Discover More</a>
+                        </div>
+                        <figure class="p-index__features__figure">
+                            <picture class="p-index__features__figure__visual">
+                                <source media="(max-width:800px)" srcset="./assets/img/sp/features-visual.jpg" />
+                                <source media="(max-width:1024px)" srcset="./assets/img/tablet/features-visual.jpg" />
+                                <img class="p-index__features__figure__visual__img"
+                                    src="./assets/img/pc/features-visual.jpg"
+                                    alt="A render of three white cylindrical columns, against a warm creme background" />
+                            </picture>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="p-index__specs u-fadeinup" id="specs">
+                <div class="u-container">
+                    <h2 class="c-heading is-center">Specs</h2>
+                    <div class="p-index__specs__intro">
+                        <p class="p-index__specs__intro__txt1 c-headline">
+                            Why Choose Area?
+                        </p>
+                        <p class="p-index__specs__intro__txt2">
+                            You need a solution that keeps up. That’s why we developed Area.
+                            A developer-friendly approach to
+                            <br class="u-display-pc-only" />streamline your business.
+                        </p>
+                        <a class="c-button is-secondary" href="#">Discover More</a>
+                    </div>
+                </div>
+                <div class="u-container-pc-only">
+                    <div class="p-index__specs__table">
+                        <div class="p-index__specs__table__list is-active">
+                            <div class="p-index__specs__table__list__title">
+                                <h3 class="p-index__specs__table__list__title__h3">Area</h3>
+                            </div>
+                            <ul class="p-index__specs__table__list__ul">
+                                <li class="p-index__specs__table__list__ul__li is-check">
+                                    Ultra-fast browsing
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-check">
+                                    Advanced AI insights
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-check">
+                                    Seamless integration
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-check">
+                                    Advanced AI insights
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-check">
+                                    Ultra-fast browsing
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-check">
+                                    Full UTF-8 support
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-index__specs__table__list">
+                            <div class="p-index__specs__table__list__title">
+                                <img class="p-index__specs__table__list__title__img" src="./assets/img/txt-websurge.png"
+                                    alt="WebSurge" />
+                            </div>
+                            <ul class="p-index__specs__table__list__ul has-border-right">
+                                <li class="p-index__specs__table__list__ul__li is-check">
+                                    Fast browsing
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-check">
+                                    Basic AI recommendations
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-check">
+                                    Restricts customization
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-x">
+                                    Basic AI insights
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-check">
+                                    Fast browsing
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-x">
+                                    Potential display errors
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-index__specs__table__list">
+                            <div class="p-index__specs__table__list__title">
+                                <img class="p-index__specs__table__list__title__img"
+                                    src="./assets/img/txt-hyperview.png" alt="HyperView" />
+                            </div>
+                            <ul class="p-index__specs__table__list__ul">
+                                <li class="p-index__specs__table__list__ul__li is-x">
+                                    Moderate speeds
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-x">
+                                    No AI assistance
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-x">
+                                    Steep learning curve
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-x">
+                                    No AI assistance
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-x">
+                                    Moderate speeds
+                                </li>
+                                <li class="p-index__specs__table__list__ul__li is-x">
+                                    Partial UTF-8 support
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="p-index__testimonial u-fadeinup">
+                <div class="u-container">
+                    <div class="p-index__testimonial__inner">
+                        <figure class="p-index__testimonial__figure  u-fadeinup">
+                            <picture class="p-index__testimonial__figure__visual">
+                                <source media="(max-width:800px)" srcset="./assets/img/sp/testimonial-visual.jpg" />
+                                <source media="(max-width:1024px)"
+                                    srcset="./assets/img/tablet/testimonial-visual.jpg" />
+                                <img class="p-index__testimonial__figure__visual__img"
+                                    src="./assets/img/pc/testimonial-visual.jpg"
+                                    alt="A render of three white cylindrical columns, against a warm creme background" />
+                            </picture>
+                        </figure>
+                        <div class="p-index__testimonial__quote u-fadeinup  ">
+                            <p class="p-index__testimonial__quote__txt">
+                                “I was skeptical, but Area has completely transformed the way
+                                I manage my business. The data visualizations are so clear
+                                and<br class="u-display-pc-only" />
+                                intuitive, and the platform is so easy to use. I can't imagine
+                                running my company without it.”
+                            </p>
+                            <p class="p-index__testimonial__quote__author">
+                                <span class="p-index__testimonial__quote__author__name">John Smith</span>
+                                <span class="p-index__testimonial__quote__author__position">Head of Data</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="p-index__hiws u-fadeinup" id="hiws">
+                <div class="u-container">
+                    <div class="p-index__hiws__intro">
+                        <p class="p-index__hiws__intro__txt c-headline">
+                            Map Your Success
+                        </p>
+                        <a class="c-button is-secondary" href="#">Discover More</a>
+                    </div>
+                    <div class="p-index__hiws__list">
+                        <div class="p-index__hiws__list__item">
+                            <p class="p-index__hiws__list__item__num">01</p>
+                            <p class="p-index__hiws__list__item__txt1">Get Started</p>
+                            <p class="p-index__hiws__list__item__txt2">
+                                With our intuitive setup, you’re up and running in minutes.
+                            </p>
+                        </div>
+                        <div class="p-index__hiws__list__item">
+                            <p class="p-index__hiws__list__item__num">02</p>
+                            <p class="p-index__hiws__list__item__txt1">
+                                Customize and Configure
+                            </p>
+                            <p class="p-index__hiws__list__item__txt2">
+                                Adapt Area to your specific requirements and preferences.
+                            </p>
+                        </div>
+                        <div class="p-index__hiws__list__item">
+                            <p class="p-index__hiws__list__item__num">03</p>
+                            <p class="p-index__hiws__list__item__txt1">
+                                Grow Your Business
+                            </p>
+                            <p class="p-index__hiws__list__item__txt2">
+                                Make informed decisions to exceed your goals.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="p-index__hiws__figure">
+                        <picture class="p-index__hiws__figure__visual">
+                            <source media="(max-width:800px)" srcset="./assets/img/sp/hiws-visual.jpg" />
+                            <source media="(max-width:1024px)" srcset="./assets/img/tablet/hiws-visual.jpg" />
+                            <img class="p-index__hiws__figure__visual__img" src="./assets/img/pc/hiws-visual.jpg"
+                                alt="A render of three white cylindrical columns, against a warm creme background" />
+                        </picture>
+                    </figure>
+                </div>
+            </section>
+            <section class="p-index__cta u-fadeinup" id="cta">
+                <div class="u-container">
+                    <div class="p-index__cta__inner">
+                        <p class="p-index__cta__txt1 c-headline">Connect with us</p>
+                        <p class="p-index__cta__txt2">
+                            Schedule a quick call to learn how Area can turn your regional
+                            data into a powerful advantage.
+                        </p>
+                        <a class="p-index__cta__btn c-button" target="_blank" href="https://www.figma.com/sites/">Learn
+                            More</a>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
 
     <footer class="l-footer">
-        <div class="l-footer__inner u-container">
-            <div class="l-footer__copyright">
-                <p class="l-footer__copyright__p">
-                    LP Template | Develop by Bryxx
-                </p>
+        <div class="u-container-pc-only">
+            <div class="l-footer__inner">
+                <ul class="l-footer__sitemap">
+                    <li>
+                        <a href="#benefits" class="l-footer__sitemap__a">Benefits</a>
+                    </li>
+                    <li>
+                        <a href="#specs" class="l-footer__sitemap__a">Specifications</a>
+                    </li>
+                    <li>
+                        <a href="#hiws" class="l-footer__sitemap__a">How-to</a>
+                    </li>
+                </ul>
+                <div class="l-footer__details">
+                    <div class="l-footer__details__col1">
+                        <img class="l-footer__details__col1__logo" src="./assets/img/footer-logo.svg"
+                            alt="Footer Logo" />
+                        <p class="l-footer__details__col1__area">
+                            <span class="l-footer__details__col1__area__txt">© Area.</span>
+                            <span class="l-footer__details__col1__area__year"></span>
+                        </p>
+                    </div>
+                    <p class="l-footer__details__allrights">All Rights Reserved</p>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="./assets/vendor/jquery-4.0.0.min.js"></script>
+    <script src="./assets/js/head.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 

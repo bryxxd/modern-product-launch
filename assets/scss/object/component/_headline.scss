@@ -1,0 +1,16 @@
+@use "../../foundation/value" as value;
+@use "../../foundation/media_query" as media_query;
+
+.c-headline {
+    padding: 50px 0;
+    font-size: 60px;
+    line-height: 90%;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+    font-family: value.$font-crimson-text;
+
+    @include media_query.mq_sp {
+        padding-bottom: 40px;
+        font-size: 50px;
+    }
+}

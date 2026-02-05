@@ -3,6 +3,7 @@
 
 html {
     font-family: value.$font-default;
+    scroll-padding-top: 40px;
 }
 
 // Body
@@ -24,7 +25,7 @@ h6 {
 
 // Anchor
 a {
-    color: value.$color-text;
+    color: value.$color-1;
     text-decoration: underline;
 
     &:hover {
@@ -32,7 +33,7 @@ a {
     }
 }
 
-// Paragraph 
+// Paragraph
 p {
     margin: 0;
 }
@@ -56,9 +57,9 @@ ul {
 }
 
 img {
-    vertical-align: top;
+    max-width: 100%;
+}
 
-    @include media_query.mq_sp {
-        max-width: 100%;
-    }
+figure {
+    margin: 0;
 }

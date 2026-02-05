@@ -1,14 +1,27 @@
 @use "../../foundation/media_query";
+@use "../../foundation/value";
 
 .u-display {
-    &-pc-only {
-        @include media_query.mq_sp {
+   &-pc-only {
+        @include media_query.mq_below_pc {
             display: none !important;
         }
     }
 
     &-sp-only {
+        @include media_query.mq_above_sp {
+            display: none !important;
+        }
+    }
+
+    &-below-pc-only {
         @include media_query.mq_pc {
+            display: none !important;
+        }
+    }
+
+    &-tablet-only {
+        @include media_query.mq_between( $sp: value.$sp-width-breakpoint, $pc: value.$pc-width) {
             display: none !important;
         }
     }

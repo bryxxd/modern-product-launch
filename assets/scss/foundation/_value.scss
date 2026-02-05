@@ -1,18 +1,26 @@
 // Font
-$font-default : 'Poppins',
-sans-serif;
-
-// Text Color
-$color-text : #333;
+$font-dm-sans : "DM Sans", sans-serif;
+$font-crimson-text : "Crimson Text", serif;
+$font-roboto : "Roboto", sans-serif;
+$font-default : $font-dm-sans;
 
 // Button Color
-$primary-btn : #0d6efd;
-$secondary-btn : #6c757d;
+$color-1 : #000000;
+$color-2 : #929292;
+$color-3 : #E9E9E9;
+$color-4 : #FFFFFF;
+$color-5 : #DFECC6;
+$color-6 : #8E9C78;
+$color-7 : #485C11;
+$color-paragraph : #6f6f6f;
 
 // For pc
-$pc-width : 1100;
-$pc-gap : 4rem;
+$pc-width : 1200;
+$pc-gap : 40px;
+
+$tablet-width: 1024;
 
 //For sp
-$sp-width: 750;
-$sp-gap : 1rem;
+$sp-width: 400;
+$sp-width-breakpoint : $sp-width * 2;
+$sp-gap : 15px;

@@ -1,13 +1,36 @@
 @use "value";
 
+// For PC layout
 @mixin mq_pc {
-    @media screen and (min-width: (value.$sp-width + 1) + px) {
+    @media screen and (min-width: (value.$pc-width) + px) {
         @content;
     }
 }
 
+// For SP layout
 @mixin mq_sp {
-    @media screen and (max-width: value.$sp-width + px) {
-        @content
-     }
+    @media screen and (max-width: (value.$sp-width-breakpoint) + px) {
+        @content;
+    }
+}
+
+// Between SP and PC
+@mixin mq_between($sp: (value.$sp-width-breakpoint), $pc: (value.$pc-width)) {
+    @media screen and (min-width: ($sp) + px) and (max-width: $pc + px) {
+        @content;
+    }
+}
+
+// Below PC layout
+@mixin mq_below_pc {
+    @media screen and (max-width: (value.$pc-width) + px) {
+        @content;
+    }
+}
+
+// Above SP layout
+@mixin mq_above_sp {
+    @media screen and (min-width: (value.$sp-width-breakpoint) + px) {
+        @content;
+    }
 }

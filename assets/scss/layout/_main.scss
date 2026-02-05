@@ -1,7 +1,9 @@
 @use "../foundation/media_query";
 
 .l-main {
+    margin-top: 60px;
+
     @include media_query.mq_sp {
-        padding-top: 4.8rem;
+        margin-top: 120px;
     }
 }

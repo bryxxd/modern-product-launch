@@ -13,11 +13,11 @@
 @use 'layout/footer';
 
 // Object
+
 // - Component
-@use 'object/component/post-category';
-@use 'object/component/post-list';
-@use 'object/component/recent-post';
-@use 'object/component/topic-path';
+@use 'object/component/button';
+@use 'object/component/heading';
+@use 'object/component/headline';
 
 // - Page
 @use 'object/page/index';
@@ -25,6 +25,7 @@
 // - Utility
 @use 'object/utility/container';
 @use 'object/utility/display';
+@use 'object/utility/fadeinup';
 
 
 
