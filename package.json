@@ -7,7 +7,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "watch": "sass --watch ./assets/scss:./assets/css --style compressed"
+    "watch": "sass --watch ./assets/scss:./assets/css --style compressed",
+    "build": "sass ./assets/scss:./assets/css --style compressed"
   },
   "devDependencies": {
     "sass": "^1.97.3"
